@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import { fetchData } from './actions/fetchActions';
+import { URL } from './constants';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { RootState } from './store';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import SpaceOverview from './pages/SpaceOverview';
+
 
 function App() {
+  const dispatch: any = useDispatch();
+  const { data, loading } = useSelector((state: RootState) => state.fetchReducer);
+  console.log("loading: ", loading);
+  console.log("data: ", data);
+
+  useEffect(() => {
+    console.log("URL: ", URL);
+    dispatch(fetchData(URL));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <SpaceOverview />
+      <Footer />
+    </>
   );
 }
 

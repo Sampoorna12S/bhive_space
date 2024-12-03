@@ -1,0 +1,130 @@
+.cardContainer{
+  display: flex;
+    flex-wrap: wrap;
+    /* Ensures items wrap to the next row */
+    gap: 16px;
+    /* Space between cards */
+    justify-content: flex-start;
+    /* Align items with space between them */
+    padding: 16px;
+}
+
+.card{
+  width: 370px;
+  height: 384px;
+  /* margin-top: 20px; */
+  /* margin-left: 20px; */
+  padding:10px;
+    flex: 1 1 calc(400px - 16px);
+      /* 3 cards per row minus the gap */
+      max-width: calc(400px - 16px);
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 16px);
+    /* 2 cards per row */
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%;
+    /* 1 card per row */
+    justify-content: center;
+    max-width: 100%;
+  }
+  .cardContainer{
+    justify-content:center;
+  }
+}
+.btnContainer{
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+}
+.border {
+height: 25px;
+  border: 1px solid #EEE7E7;
+  padding: 4px 6px;
+  border-radius: 4px;
+  /* margin-top: 25px; */
+  align-content: center;
+  /* margin-right: 10px; */
+  background-color:#F9F9F9;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.topAddress{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dayPassButton{
+    color: #65624C !important;
+    text-transform: none !important;
+    background-color: #F9F9F9 !important;
+    border:1px solid #EEE7E7 !important;
+    border-radius: 5px !important;
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    margin-right: 10px;
+}
+.bulkPassButton{
+    color: #65624C !important;
+    text-transform: none !important;
+    background-color: #FFCF4B !important;
+    border:1px solid #FFC422 !important;
+    border-radius: 5px !important;
+    width: 100%;
+    height: 10%;
+    padding: 0;
+}
+.btnDetailsContainer{
+  margin-right: 20px;
+}
+.passText{
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+}
+.amount{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color:#263238;
+  margin: 0 ;
+}
+.passSpanText{
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0 ;
+  padding-top: 9px
+}
+.bulkBadge{
+  position: absolute;
+  z-index: 2;
+  .ant-badge-count{
+    left: 13.5rem;
+    top: -15px !important;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    box-shadow: none;
+  }
+}
+.spaceStyle{
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
