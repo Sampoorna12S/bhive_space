@@ -9,8 +9,8 @@ function TopBanner() {
   return (
     <>
       <Flex className='topBanner' wrap justify="space-around" rootClassName='flexContainer' align='center' gap={0}>
-        <img src={bg_top} className='topImages' />
-        <img src={phone_top_img} className='manImage' />
+        <img src={bg_top} className='topImages' alt='top'/>
+        <img src={phone_top_img} className='manImage' alt='man.jpg'/>
       </Flex>
       <h1 className='topContent'>Host your meeting with world-class amenities. Starting at <b style={{ color: '#FFBB00' }}>{START_RATE}</b></h1>
     </>

@@ -17,7 +17,7 @@ function SpaceOverview() {
       <Tiles data={BENEFITS} />
       <h1 style={{ padding: '25px' }}>Our Space Overview</h1>
       <CardComponent data={data} />
-      <img src={download} />
+      <img src={download} alt='download'/>
     </div>
   );
 }
