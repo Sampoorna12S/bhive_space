@@ -1,0 +1,22 @@
+.header{
+width: 100vw;
+background-color:whitesmoke;
+/* position:fixed; */
+height: 6vh;
+z-index: 100;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+
+.bhive_logo{
+  margin-left: 50px;
+}
+
+.borderBox{
+  border: 1px solid #FFBB00;
+  padding: 4px 6px;
+  margin-right: 50px;
+  border-radius: 4px;
+}
