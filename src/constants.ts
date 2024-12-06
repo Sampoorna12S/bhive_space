@@ -6,8 +6,10 @@ import timer from 'assets/timer.svg';
 import lounge from 'assets/lounge.svg';
 import coin from 'assets/coin.svg';
 import calendar from 'assets/calendar.svg';
+import data from 'data.json'
+console.log("data: ", data);
 
-export const URL = '../data.json';
+export const URL = 'data.json';
 
 export const BENEFITS = [
   { icon: calendar, title: 'Community Events' },
