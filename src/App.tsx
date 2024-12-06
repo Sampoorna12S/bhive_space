@@ -12,7 +12,7 @@ function App() {
   const dispatch: any = useDispatch();
 
   useEffect(() => {
-    console.log("URL: ", URL);
+    console.log("URL: ", URL,);
     dispatch(fetchData(URL));
     // eslint-disable-next-line
   }, []);
