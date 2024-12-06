@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bhive_space/static/css/main.63507081.css",
-    "main.js": "/bhive_space/static/js/main.d70042dd.js",
+    "main.js": "/bhive_space/static/js/main.1c7262bc.js",
     "static/js/453.43486f65.chunk.js": "/bhive_space/static/js/453.43486f65.chunk.js",
     "static/media/bottom_download.svg": "/bhive_space/static/media/bottom_download.a99549dc849d89d36e8f233c411f2a1d.svg",
     "static/media/jpg": "/bhive_space/static/media/4d85410baa074351aa948fc2c5da50d9.64f087be5245f4560f1e.jpg",
@@ -21,11 +21,11 @@
     "index.html": "/bhive_space/index.html",
     "static/media/calendar.svg": "/bhive_space/static/media/calendar.e3c5162b1b6532b480f96490728ba957.svg",
     "main.63507081.css.map": "/bhive_space/static/css/main.63507081.css.map",
-    "main.d70042dd.js.map": "/bhive_space/static/js/main.d70042dd.js.map",
+    "main.1c7262bc.js.map": "/bhive_space/static/js/main.1c7262bc.js.map",
     "453.43486f65.chunk.js.map": "/bhive_space/static/js/453.43486f65.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63507081.css",
-    "static/js/main.d70042dd.js"
+    "static/js/main.1c7262bc.js"
   ]
 }

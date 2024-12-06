@@ -7,7 +7,7 @@ import lounge from 'assets/lounge.svg';
 import coin from 'assets/coin.svg';
 import calendar from 'assets/calendar.svg';
 
-export const URL = '/public/data.json';
+export const URL = '../data.json';
 
 export const BENEFITS = [
   { icon: calendar, title: 'Community Events' },
